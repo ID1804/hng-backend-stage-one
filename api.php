@@ -2,7 +2,7 @@
 
 $result = array();
 $github_file_url = "https://github.com/ID1804/hng-backend-stage-one/blob/main/api.php";
-$github_repo_url = "https://github.com/ID1804/hng-backend-stage-one/tree/main";
+$github_repo_url = "https://github.com/ID1804/hng-backend-stage-one";
 $utc_time = gmdate("Y-m-d\TH:i:s\Z");
 $current_day = date("l");
 
