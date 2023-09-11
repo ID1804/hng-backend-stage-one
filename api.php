@@ -1,9 +1,8 @@
 <?php
 
 $result = array();
-$github_file_url = "";
-$github_repo_url = "";
-//$utc_time = date("Y-m-d");
+$github_file_url = "https://github.com/ID1804/hng-backend-stage-one/blob/main/api.php";
+$github_repo_url = "https://github.com/ID1804/hng-backend-stage-one/tree/main";
 $utc_time = gmdate("Y-m-d\TH:i:s\Z");
 $current_day = date("l");
 
