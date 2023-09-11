@@ -21,7 +21,6 @@ $result["github_file_url"] = $github_file_url;
 $result["github_repo_url"] = $github_repo_url;
 $result["status_code"] = 200;
 
-echo json_encode($result);
-//echo $result;
+echo json_encode($result, JSON_UNESCAPED_SLASHES);
 
 ?>
