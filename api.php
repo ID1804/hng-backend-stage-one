@@ -13,14 +13,16 @@ if(isset($_GET["slack_name"], $_GET["track"])) {
 	$track = "Track";
 }
 
-$result["slack_name"] = $slack_name;
-$result["current_day"] = $current_day;
-$result["utc_time"] = $utc_time;
-$result["track"] = $track;
-$result["github_file_url"] = $github_file_url;
-$result["github_repo_url"] = $github_repo_url;
-$result["status_code"] = 200;
+$result = array(
+	"slack_name" => $slack_name,
+	"current_day" => $current_day,
+	"utc_time" => $utc_time,
+	"track" => $track,
+	"github_file_url" => $github_file_url,
+	"github_repo_url" => $github_repo_url,
+	"status_code" => 200
+);
 
-echo json_encode($result, JSON_UNESCAPED_SLASHES);
+echo json_encode($result, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
 
 ?>
