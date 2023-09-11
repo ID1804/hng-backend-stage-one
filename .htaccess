@@ -1,0 +1,7 @@
+
+#disable directory browsing
+Options All -Indexes
+
+RewriteEngine on
+RewriteBase /
+RewriteRule ^([a-zA-Z0-9]+)$ $1.php [NC,L]
